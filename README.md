@@ -89,3 +89,13 @@ func main(){
   fmt.Println(cookie)
 }
 ```
+
+# Benchmark
+
+```
+goos: windows
+goarch: amd64
+pkg: github.com/Numenorean/pornhubEvaler
+cpu: Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+BenchmarkEval-4            31478             36748 ns/op            5171 B/op         61 allocs/op
+```

@@ -5,7 +5,7 @@
 When you made a lot of requests to pornhub.com, you've probably faced with the script, that protects website from further non browser requests
 
 <details>
-  <summary>This script</summary>
+  <summary>The script</summary>
   
   ```javascript
   function leastFactor(n) {

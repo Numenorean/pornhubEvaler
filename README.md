@@ -97,6 +97,9 @@ goos: windows
 goarch: amd64
 pkg: github.com/Numenorean/pornhubEvaler
 cpu: Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
-BenchmarkEvalWithOldData-4   	   26568	     40553 ns/op	    5324 B/op	      64 allocs/op
-BenchmarkEvalWithNewData-4   	     297	   4054488 ns/op	    5498 B/op	      65 allocs/op
+BenchmarkEvalWithOldData-4   	   30880	     39292 ns/op	    5316 B/op	      64 allocs/op
+BenchmarkEvalWithNewData-4   	     300	   4122257 ns/op	    5496 B/op	      65 allocs/op
+PASS
+coverage: 79.7% of statements
+ok  	github.com/Numenorean/pornhubEvaler	3.281s
 ```

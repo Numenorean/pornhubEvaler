@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	emptyDataReplacer   = strings.NewReplacer(" ", "", "	", "", "\\r\\n", "", "\\n", "", "\\t", "")
+	emptyDataReplacer   = strings.NewReplacer(" ", "", "	", "", "\\r\\n", "", "\\n", "", "\\t", "", "\r\n", "", "\n", "", "\t", "")
 	removeCommentsRegex = regexp.MustCompile(`\/\*[\s\S]*?\*\/|\/\/.*`)
 	pRegex              = regexp.MustCompile(`varp=(\d+);`)
 	sRegex              = regexp.MustCompile(`vars=(\d+);`)

@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	emptyDataReplacer   = strings.NewReplacer(" ", "", "	", "", "\\r\\n", "", "\\n", "", "\\t", "", "\r\n", "", "\n", "", "\t", "")
+	emptyDataReplacer   = strings.NewReplacer(" ", "", "	", "", "\\r\\n", "", "\\n", "", "\\t", "")
 	removeCommentsRegex = regexp.MustCompile(`\/\*[\s\S]*?\*\/|\/\/.*`)
 	pRegex              = regexp.MustCompile(`varp=(\d+);`)
 	sRegex              = regexp.MustCompile(`vars=(\d+);`)
@@ -30,7 +30,7 @@ func Eval(data string) string {
 	pMinusValues := sliceStringToInt(pMinusRegex.FindAllStringSubmatch(data, -1))
 	cookieNumber := cookieNumberRegex.FindStringSubmatch(data)[1]
 	pLastValueStr := pLastRegex.FindStringSubmatch(data)
-	pLastValue, _ := strconv.Atoi(pLastValueStr[0])
+	pLastValue, _ := strconv.Atoi(pLastValueStr[1])
 	if ((sValue >> shiftValues[0]) & 1) == 1 {
 		pValue += pPlusValues[0][0] * pPlusValues[0][1]
 	} else {

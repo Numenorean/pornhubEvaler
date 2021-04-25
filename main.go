@@ -17,7 +17,6 @@ var (
 	pMinusRegex         = regexp.MustCompile(`p-=(\d+)\*(\d+);`)
 	pLastRegex          = regexp.MustCompile(`p[-|\+]=(\d+);`)
 	cookieNumberRegex   = regexp.MustCompile(`":"\+s\+"([\d\s:;]+)(?:"|;)`)
-	a                   = ""
 )
 
 // Evalute given JS data(not in base64)
